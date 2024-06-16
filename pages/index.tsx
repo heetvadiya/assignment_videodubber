@@ -3,9 +3,9 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "../styles/Home.module.css";
 import { Anchor, Box, Button, Text, Title } from "@mantine/core";
-import PlansSection from "../components/PlansSection";
-import Trustedby from "../components/Trustedby";
-import HeaderMegaMenu from "../components/HeaderMegaMenu";
+import PlansSection from "../Components/PlansSection";
+import Trustedby from "../Components/Trustedby";
+import HeaderMegaMenu from "../Components/HeaderMegaMenu";
 import classes from "../styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
