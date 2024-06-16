@@ -1,3 +1,14 @@
 {
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@", "./"] // Or map to other directories as needed
+        ],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
   "extends": "next/core-web-vitals"
+  
 }
