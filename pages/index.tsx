@@ -2,11 +2,19 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import { HeaderMegaMenu } from "@/components/navheader/HeaderMegaMenu";
+import { Anchor, Box, Button, Text, Title } from "@mantine/core";
+import PlansSection from "@/components/PlansSection";
+import Trustedby from "@/components/Trustedby";
+import HeaderMegaMenu from "@/components/HeaderMegaMenu";
+import classes from "@/styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const blueTextStyle = {
+    color: "#4299E1",
+    textDecoration: "underline",
+  };
   return (
     <>
       <Head>
@@ -15,9 +23,44 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
-        <HeaderMegaMenu></HeaderMegaMenu>
-      </main>
+      <Box bg="#eceeee" py="20px">
+      <Box w="100%" p="10px 20px" style={{ position: "fixed", zIndex: "3" }}>
+        <HeaderMegaMenu />
+      </Box>
+        <Title
+          style={{textAlign:'center'}}
+          my="lg"
+          className={classes.fonts}
+          m="0px 0px 20px"
+          ff="impact" // Change the font to saira extra condensed bold
+          lts="0.05em" // Add letter spacing of 0.1em
+          mt="150px"
+          w='100%'
+          size="2xl" // Increase the size by 50%
+        >
+          GREAT VIDEOS START WITH A PLAN
+        </Title>
+        <Text style={{textAlign:'center'}} size="xl" mb="1rem" mt="-1rem">
+          Try VEED with our{" "}
+          <Anchor
+            href="#"
+            target="_blank"
+            style={{ textDecoration: "underline" }}
+          >
+            Free Plan
+          </Anchor>
+        </Text>
+
+        {/* pricings box  */}
+      <Box>
+        <PlansSection />
+      </Box>
+
+      {/* trusted by teams  */}
+      <Box>
+        <Trustedby />
+      </Box>
+    </Box>
     </>
   );
 }

@@ -227,3 +227,11 @@
     transform: rotate(0deg);
   }
 }
+
+.fonts{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 60px;
+	@media (max-width: 750px){
+		font-size: 30px;
+	  }
+  }
