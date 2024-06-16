@@ -22,6 +22,7 @@
     "@mantine/nprogress": "^7.10.2",
     "@mantine/spotlight": "^7.10.2",
     "@mantine/tiptap": "^7.10.2",
+    "@mantinex/mantine-logo": "^1.0.1",
     "@tabler/icons-react": "^3.6.0",
     "@tiptap/extension-link": "^2.4.0",
     "@tiptap/react": "^2.4.0",
@@ -31,7 +32,8 @@
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
-    "recharts": "^2.12.7"
+    "recharts": "^2.12.7",
+    "sass": "^1.77.5"
   },
   "devDependencies": {
     "@types/node": "^20",
