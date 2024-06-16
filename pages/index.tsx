@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+import styles from "../styles/Home.module.css";
 import { Anchor, Box, Button, Text, Title } from "@mantine/core";
-import PlansSection from "@/components/PlansSection";
-import Trustedby from "@/components/Trustedby";
-import HeaderMegaMenu from "@/components/HeaderMegaMenu";
-import classes from "@/styles/Home.module.css";
+import PlansSection from "../components/PlansSection";
+import Trustedby from "../components/Trustedby";
+import HeaderMegaMenu from "../components/HeaderMegaMenu";
+import classes from "../styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
